@@ -1,0 +1,10 @@
+<div class="movie_container">
+    <h1>{{title}}</h1>
+    <div class="movies_items">
+        <div class="movie_card" *ngFor="let movie of listMovies">
+            <a [routerLink]="['/app-details', movie.id]"><img src="https://image.tmdb.org/t/p/w300{{movie.poster_path}}" alt="{{movie.title}}"></a>
+            <p>{{ movie.overview|sliceString:20 }} <a class="badge" [routerLink]="['/app-details', movie.id]">Voir plus</a></p>
+        </div>
+    </div>
+    
+  </div>

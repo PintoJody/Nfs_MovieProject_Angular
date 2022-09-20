@@ -1,0 +1,20 @@
+<div class="detail_container">
+    <div class="detail_info">
+        <div class="global_info">
+            <h2>{{detailMovie.title}}</h2>
+            <p>
+            Film n°{{detailMovie.id}}<br>
+            Date de sortie : {{detailMovie.release_date|date:'shortDate'}}<br>
+            Durée : {{detailMovie.runtime}} minutes<br>
+            <a href="{{detailMovie.homepage}}">Regarder en streaming</a>
+            </p>
+            <p>Synopsis : <br>{{detailMovie.overview}}</p>
+
+        </div>
+        <div class="detail_picture">
+            <img src="https://image.tmdb.org/t/p/w200{{detailMovie.poster_path}}" alt="{{detailMovie.title}}">
+        </div>
+    </div>
+</div>
+
+

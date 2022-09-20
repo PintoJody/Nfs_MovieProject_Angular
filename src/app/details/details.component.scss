@@ -1,0 +1,11 @@
+.detail_container{
+    border: 2px solid grey;
+    margin: 5rem auto;
+    width: 40%;
+    padding: .5rem 1.5rem;
+    .detail_info{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
